@@ -1,2 +1,2 @@
-# SCL010-hackathon
-Hackathon common core
+# hackathon-movies
+Hackathon Common Core SCL010
