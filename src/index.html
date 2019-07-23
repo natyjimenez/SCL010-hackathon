@@ -14,8 +14,23 @@
       <nav>
       </nav>
     </header>
-
+    <!--Estos dos inputs son para el ingreso de los términos de búsqueda-->
+    <label class="form-control" for="searchInputBox">Ingresa el término de búsqueda</label>
+    <input class="form-control" type="text" id="searchInputBox">
+    <button type="button" class="btn btn-danger" id="btnSearchNow" onclick="fetchingData.searchByImdbId()">Buscar</button>
+    <label class="form-control" for="searchInputBox">Si tienes el ID de IMDB ingrésalo acá</label>
+    <input class="form-control" type="text" id="searchIdBox">
+    <button type="button" class="btn btn-warning" id="btnSearchIdNow" onclick="fetchingData.searchByImdbId()">Buscar</button>
+    
+    <!--Fin de los inputs de los términos de búsqueda-->
   
+    <!--Este div es el espacio para que se muestren los resultados -- puede modificarse, pero conservar los id's-->
+    <div id="searchResultsBox">
+
+
+    </div>
+
+    <!--Fin del div para que se muestren los resultados-->
     <footer>
           <div><p>&copy; Copyright 2019</p></div>
     </footer>
