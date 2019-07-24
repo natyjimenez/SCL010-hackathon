@@ -1,4 +1,3 @@
-window.womenDirectors = {
 
      directors : [
         {
@@ -209,3 +208,4 @@ window.womenDirectors = {
 };
 
 window.womenDirectors = womenDirectors;
+
