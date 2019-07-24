@@ -22,6 +22,23 @@ window.fetchingData = {
           console.log(idResultParsed);
           return idResultParsed;
         });
+      },
+
+      searchInWomenDirectors: ()=>{
+        for(let v=0; v<womenDirectors.directors.length; v++){
+          let idToSearchInAPI = womenDirectors.directors[v].imdbID;
+          fetch(`http://www.omdbapi.com/?i=${idToSearchInAPI}&apikey=cf8ca967`)
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (userSearchParsed) {
+            console.log(userSearchParsed);
+            return userSearchParsed;
+          });
+    
+
+        }
+
       }
     
 };
