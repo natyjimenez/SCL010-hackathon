@@ -1,3 +1,4 @@
+//encabezado debe estar
 window.handlingDOM = {
     catchingSearchTerm : () =>{
         let searchTerm = document.getElementById('searchInputBox').value;

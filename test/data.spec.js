@@ -13,4 +13,4 @@ describe('example', () => {
   it('debería retornar "example"', () => {
     assert.equal(example(), 'example');
   });
-})
+});
