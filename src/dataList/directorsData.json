@@ -1,1 +1,129 @@
-
+{
+    "directors": [
+        {
+            "name": "Patty Jenkins",
+            "movieSample": "Wonder Woman"
+        },
+        {
+            "name": "Sofia Coppola",
+            "movieSample": ["La Seducción", "Lost in Translation"]
+        },
+        {
+            "name": "Jennifer Kent",
+            "movieSample": "Babadook"
+        },
+        {
+            "name": "Amma Asante",
+            "movieSample": "Belle"
+        },
+        {
+            "name": "Patricia Riggen",
+            "movieSample": "Los 33: una historia de esperanza"
+        },
+        {
+            "name": "Barbra Streisand",
+            "movieSample": "Yentl"
+        },
+        {
+            "name": "Ava DuVernay",
+            "movieSample": "13th"
+        },
+        {
+            "name": "Mary Lambert",
+            "movieSample": "Cementerio Viviente"
+        },
+        {
+            "name": "Jennifer Lee",
+            "movieSample": "Frozen"
+        },
+        {
+            "name": "Marielle Heller",
+            "movieSample": "The Diary of a Teenage Girl"
+        },
+        {
+            "name": "Penny Marshall",
+            "movieSample": "Big"
+        },
+        {
+            "name": "Jerusha Hess",
+            "movieSample": "En tierra de Jane Austen"
+        },
+        {
+            "name": "Maggie Carey",
+            "movieSample": "Cosas que hacer antes de los 18"
+        },
+        {
+            "name": "Lynne Ramsay",
+            "movieSample": "Morvern Callar"
+        },
+        {
+            "name": "Anna Biller",
+            "movieSample": "The Love Witch"
+        },
+        {
+            "name": "Lisa Cholodenko",
+            "movieSample": "The Kids Are All Right"
+        },
+        {
+            "name": "Katheryn Bigelow",
+            "movieSample": "Zero Dark Thirty"
+        },
+        {
+            "name": "Andrea Arnold",
+            "movieSample": "Red Road"
+        },
+        {
+            "name": "Amy Hackerling",
+            "movieSample": "Fast Times at Ridgemont High"
+        },
+        {
+            "name": "Sarah Gavron",
+            "movieSample": "Suffragette"
+        },
+        {
+            "name": "Quinn Shephard",
+            "movieSample": "Blame"
+        },
+        {
+            "name": "Julie Taymor",
+            "movieSample": "Across The Universe"
+        },
+        {
+            "name": "Caryn Waechter",
+            "movieSample": "The Sisterhood of Night"
+        },
+        {
+            "name": "Catherine Hardwicke",
+            "movieSample": "Thirteen"
+        },
+        {
+            "name": "Deniz Gamze Ergüven",
+            "movieSample": "Mustang"
+        },
+        {
+            "name": "Gurinder Chadha",
+            "movieSample": "Mi gato Angus, el primer morreo y el plasta de mi padre"
+        },
+        {
+            "name": "Karyn Kusama",
+            "movieSample": "Jennifer's Body"
+        },
+        {
+            "name": "Greta Gerwig",
+            "movieSample": "Lady Bird"
+        },
+        {
+            "name": "Chantal Akerman",
+            "movieSample": "No Home Movie"
+        },
+        {
+            "name": "Chantal Akerman",
+            "movieSample": "No Home Movie"
+        },
+        {
+            "name": "Jane Campion",
+            "movieSample": "Bright Star"
+        } 
+        
+    ]
+}
