@@ -1,4 +1,4 @@
-
+window.womenDirectors = {
      directors : [
         {
             "name": "Patty Jenkins",
