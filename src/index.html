@@ -1,27 +1,83 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1, minimum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
-  
-    <title></title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mobile.css">
-  </head>
 
-  <body>
-    <header>
-      <nav>
-      </nav>
-    </header>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1, minimum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
 
-  
-    <footer>
-          <div><p>&copy; Copyright 2019</p></div>
-    </footer>
+  <title></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobile.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+    </nav>
+  </header>
+  <!--Estos dos inputs son para el ingreso de los términos de búsqueda-->
+  <div class="container">
+    <!--Conjunto label, input, button para Buscar Peli por nombre de directora-->
+    <label class="form-control" for="searchOnlyWmBox">Busca la peli de tu directora favorita ingresando su
+      nombre</label>
+    <input class="form-control" type="text" id="searchOnlyWmBox">
+    <button type="button" class="btn btn-danger" id="searchOnlyWmBox" onclick="fetchingData.searchOnlyWomenData()">Busca
+      una peli de mi directora fav</button>
+
+    <!--Conjunto label, input, button para Buscar Peli por su título-->
+    <label class="form-control" for="searchInputBox">Busca pelis por su título</label>
+    <input class="form-control" type="text" id="searchInputBox">
+    <button type="button" class="btn btn-danger" id="btnSearchNow" onclick="fetchingData.searchByUserInput()">Busca la
+      peli por su título</button>
+
+    <!--Conjunto label, input, button para Buscar Peli por identificador de IMDB-->
+    <label class="form-control" for="searchIdBox">Si tienes el ID de IMDB ingrésalo acá</label>
+    <input class="form-control" type="text" id="searchIdBox">
+    <button type="button" class="btn btn-warning" id="btnSearchIdNow" onclick="fetchingData.searchByImdbId()">Busca la
+      peli por su identificador IMDB</button>
+
+    <!--Botón para volver a mostrar todas las pelis-->
+    <button type="button" class="btn btn-secondary btn-lg btn-block" id="btnShowAll"
+      onclick="fetchingData.cleanAndShowAll()">Mostrar todas las Fem pelis</button>
+
+    <!--Botón para limpiar los inputs-->
+    <button type="button" class="btn btn-secondary btn-lg btn-block" id="btnShowAll"
+      onclick="handlingDOM.cleanInputs()">Limpiar</button>
+  </div>
+  <!--Fin de los inputs de los términos de búsqueda-->
+
+  <!--Este div es el espacio para que se muestren los resultados -- puede modificarse, pero conservar los id's-->
+  <div class="container card-deck" id="searchResultsBox"></div>
+
+  <!--Fin del div para que se muestren los resultados-->
+  <footer>
+    <div>
+      <p>&copy; Copyright 2019</p>
+    </div>
+  </footer>
 
 
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="dataList/directorsDataJSLocal.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      fetchingData.searchInWomenDirectors()
+    });
+  </script>
+</body>
+
+
 </html>
