@@ -1,5 +1,8 @@
 window.womenDirectors = {
+<<<<<<< HEAD
+=======
 
+>>>>>>> principal
      directors : [
         {
             "name": "Patty Jenkins",
