@@ -1,4 +1,8 @@
 window.womenDirectors = {
+<<<<<<< HEAD
+=======
+
+>>>>>>> principal
      directors : [
         {
             "name": "Patty Jenkins",
@@ -208,4 +212,3 @@ window.womenDirectors = {
 };
 
 window.womenDirectors = womenDirectors;
-
