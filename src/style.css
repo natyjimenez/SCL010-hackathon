@@ -1,0 +1,7 @@
+.card-deck{
+    margin: 0 1%;
+}
+
+#searchResultsBox{
+    justify-content: space-around;
+}
