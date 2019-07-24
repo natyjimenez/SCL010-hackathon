@@ -21,6 +21,12 @@ describe ('fetchingData', ()=> {
 //     assert.equal(typeof example, 'function');
 //   });
 
+
+  it('debería retornar "example"', () => {
+    assert.equal(example(), 'example');
+  });
+});
+=======
 //   it('debería retornar "example"', () => {
 //     assert.equal(example(), 'example');
 //   });
@@ -84,3 +90,4 @@ describe ('fetchingData', ()=> {
 //     assert.deepEqual( window.dataPokemon.computeStats(sample, "Psychic"),"Los Pokemones deste tipo representan 50% de todos los de la Generación Kanto");
 //   });
 // });
+
