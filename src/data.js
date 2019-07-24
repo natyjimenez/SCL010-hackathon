@@ -88,5 +88,6 @@ window.fetchingData = {
 
   }
 
+
 };
 window.fetchingData = fetchingData;
