@@ -3,12 +3,22 @@ window.fetchingData = {
   de búsqueda que ingrese el usuario */
   searchByUserInput: () => {
     let userSearch = handlingDOM.catchingSearchTerm();
+    console.log(userSearch);
     fetch(`http://www.omdbapi.com/?s=${userSearch}&apikey=cf8ca967`)
       .then(function (response) {
         return response.json();
       })
       .then(function (userSearchParsed) {
-        return userSearchParsed;
+        let resultContent = '';
+        //handlingDOM.fillingCards().innerHTML = '';
+        console.log(userSearchParsed.Plot);
+        console.log(userSearchParsed);
+        let card = document.createElement('div');
+        resultContent += `<div class="card" style="width: 18rem;"> <img src="${userSearchParsed.Poster}" class="card-img-top" alt="${userSearchParsed.Title}">
+              <div class="card-body"> <h5 class="card-title">${userSearchParsed.Title}</h5> 
+              <p class="card-text">${userSearchParsed.Plot}</p> <a href="#" class="btn btn-primary">Director's Bio</a> </div> </div>`;
+        card.innerHTML = resultContent;
+        handlingDOM.fillingCards().appendChild(card);
       });
 
   },
@@ -34,12 +44,12 @@ window.fetchingData = {
         .then(function (response) {
           return response.json();
         })
-        .then(function (searchParsed) {
+        .then ((searchParsed) => {
           let resultContent = '';
           let card = document.createElement('div');
           resultContent += `<div class="card" style="width: 18rem;"> <img src="${searchParsed.Poster}" class="card-img-top" alt="${searchParsed.Title}">
               <div class="card-body"> <h5 class="card-title">${searchParsed.Title}</h5> 
-              <p class="card-text">${searchParsed.Plot}</p> <a href="#" class="btn btn-primary">Director's Bio</a> </div> </div>`;
+              <p class="card-text">${searchParsed.Plot}</p> <a href="#" class="btn btn-dark">Director's Bio</a> </div> </div>`;
           card.innerHTML = resultContent;
           handlingDOM.fillingCards().appendChild(card);
         });
@@ -65,7 +75,7 @@ window.fetchingData = {
         let resultContent = '';
         resultContent += `<div class="card" style="width: 18rem;"> <img src="${searchParsed.Poster}" class="card-img-top" alt="${searchParsed.Title}">
               <div class="card-body"> <h5 class="card-title">${searchParsed.Title}</h5> 
-              <p class="card-text">${searchParsed.Plot}</p> <a href="#" class="btn btn-primary">Director's Bio</a> </div> </div>`;
+              <p class="card-text">${searchParsed.Plot}</p> <a href="#" class="btn btn-dark">Director's Bio</a> </div> </div>`;
         handlingDOM.fillingCards().innerHTML = resultContent;
       });
 
