@@ -276,4 +276,3 @@ window.womenDirectors = {
 };
 
 window.womenDirectors = womenDirectors;
-
