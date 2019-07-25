@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Índice
 •	1. Resumen del proyecto
 •	2. Resumen del producto
@@ -17,6 +18,8 @@ o	5.7. Interfaz final
 o	5.8. Pruebas unitarias
 o	5.9. Herramientas utilizadas
 •	6. Conclusión
+=======
+>>>>>>> 57ee4644d4525b10a3465b3b8a0b63e6c8d28245
 ## **Índice**
 *  [1. Resumen del proyecto](#resumen-del-proyecto)
 *  [2. Resumen del producto](#poketmon-resumen-del-producto)
@@ -50,6 +53,10 @@ Tiempo para completar el reto: 4 días.
   ***
 
 ## **3. Planificación**
+<<<<<<< HEAD
+=======
+
+>>>>>>> 57ee4644d4525b10a3465b3b8a0b63e6c8d28245
 La planificación de nuestro proyecto la plasmamos en Trello, pueden acceder a estos datos en el siguiente link:
 
 
@@ -59,7 +66,19 @@ Nigma Silmi: Programadora.
 Daniela Quintana: Desarrollo visual.
 Carolina Medina: Desarrollo visual.
 Natalia Jiménez: Boilerplate, Github (Master).
+<<<<<<< HEAD
   ***
+=======
+
+La planificación de nuestro proyecto la plasmamos en Trello, pueden acceder a estos datos en el siguiente [link](https://trello.com/b/5GzJGPyn/hackaton-pelis-squad-8).
+
+La repartición de tareas fue la siguiente:
+
+- Nigma Silmi: Programadora.
+- Daniela Quintana: Desarrollo visual.
+- Carolina Medina: Desarrollo visual.
+- Natalia Jiménez: Boilerplate, Github (Master).
+>>>>>>> 57ee4644d4525b10a3465b3b8a0b63e6c8d28245
 
 ## **4. Proceso de Diseño**
 ### **4.1. Definición de usuario**
@@ -103,7 +122,11 @@ Los resultados más relevantes fueron los siguientes:
 ***
 
 ### **5.2. Diagrama de flujo**
+<<<<<<< HEAD
 <a href="https://ibb.co/9Y9K7jD"><img src="https://i.ibb.co/F7bZFtr/flujo.jpg" alt="flujo" border="0"></a>
+=======
+
+>>>>>>> 57ee4644d4525b10a3465b3b8a0b63e6c8d28245
 ***
 
 ### **5.3. Prototipo de baja y média fidelidad**
@@ -111,7 +134,11 @@ Los resultados más relevantes fueron los siguientes:
 ***
 
 ### **5.4. Prototipo de alta fidelidad**
+<<<<<<< HEAD
 <a href="https://ibb.co/SmbHqkt"><img src="https://i.ibb.co/PWKJB2c/prototipoalta.jpg" alt="prototipoalta" border="0"></a>
+=======
+
+>>>>>>> 57ee4644d4525b10a3465b3b8a0b63e6c8d28245
 
 ### **5.5. Decisión de diseño**
 Como Diseño final decidimos usar como inspiración el sitio de Fox Play, que es el que le parece más amigable a las usuarios.
@@ -132,7 +159,11 @@ La interfaz final trató de adaptarse lo mayor posible al prototipo de alta fide
 
 -  [Figma](https://www.figma.com/)
 
+<<<<<<< HEAD
 -  [Bootstrap](https://getbootstrap.com/)
+=======
+-  [Bootstrap]
+>>>>>>> 57ee4644d4525b10a3465b3b8a0b63e6c8d28245
 
 -  [Git](https://git-scm.com/)
 
@@ -145,3 +176,7 @@ La interfaz final trató de adaptarse lo mayor posible al prototipo de alta fide
 
 ## **6. Conclusión**
 ***
+<<<<<<< HEAD
+=======
+
+>>>>>>> 57ee4644d4525b10a3465b3b8a0b63e6c8d28245
