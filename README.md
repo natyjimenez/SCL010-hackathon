@@ -31,15 +31,14 @@ Tiempo para completar el reto: 4 días.
   ***
 
 ## **3. Planificación**
-La planificación de nuestro proyecto la plasmamos en Trello, pueden acceder a estos datos en el siguiente link:
-
+La planificación de nuestro proyecto la plasmamos en Trello, pueden acceder a estos datos en el siguiente [link](https://trello.com/b/5GzJGPyn/hackaton-pelis-squad-8).
 
 La repartición de tareas fue la siguiente:
 
-Nigma Silmi: Programadora.
-Daniela Quintana: Desarrollo visual.
-Carolina Medina: Desarrollo visual.
-Natalia Jiménez: Boilerplate, Github (Master).
+- Nigma Silmi: Programadora.
+- Daniela Quintana: Desarrollo visual.
+- Carolina Medina: Desarrollo visual.
+- Natalia Jiménez: Boilerplate, Github (Master).
   ***
 
 ## **4. Proceso de Diseño**
@@ -107,13 +106,13 @@ La interfaz final trató de adaptarse lo mayor posible al prototipo de alta fide
 
 -  Visual Studio (HTML5, CSS, JAVASCRIPT)
 
+-  Bootstrap
+
 -  [Trello](https://trello.com)
 
 -  [Balsamiq](https://balsamiq.com/)
 
 -  [Figma](https://www.figma.com/)
-
--  [Bootstrap]
 
 -  [Git](https://git-scm.com/)
 
