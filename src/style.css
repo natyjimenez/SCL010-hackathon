@@ -7,6 +7,10 @@ body {
 
 }
 
+.form-controlMovie {
+font-size: 12px;
+}
+
 .cards {    
     display: flex;
     justify-content: center; 
@@ -54,6 +58,7 @@ body {
     border-radius: 5px;
     padding: 10px;
     justify-content: flex-start;
+    font-size: 10px;
 }
 
 .btn-dangerMovie {
