@@ -31,6 +31,7 @@ Tiempo para completar el reto: 4 días.
   ***
 
 ## **3. Planificación**
+
 La planificación de nuestro proyecto la plasmamos en Trello, pueden acceder a estos datos en el siguiente link:
 
 
@@ -40,7 +41,15 @@ Nigma Silmi: Programadora.
 Daniela Quintana: Desarrollo visual.
 Carolina Medina: Desarrollo visual.
 Natalia Jiménez: Boilerplate, Github (Master).
-  ***
+
+La planificación de nuestro proyecto la plasmamos en Trello, pueden acceder a estos datos en el siguiente [link](https://trello.com/b/5GzJGPyn/hackaton-pelis-squad-8).
+
+La repartición de tareas fue la siguiente:
+
+- Nigma Silmi: Programadora.
+- Daniela Quintana: Desarrollo visual.
+- Carolina Medina: Desarrollo visual.
+- Natalia Jiménez: Boilerplate, Github (Master).
 
 ## **4. Proceso de Diseño**
 ### **4.1. Definición de usuario**

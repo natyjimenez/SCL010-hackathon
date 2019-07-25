@@ -45,85 +45,44 @@ window.fetchingData = {
         resultContent += `<div class="cardMovie" style="width: 18rem;"> <img src="${idResultParsed.Poster}" class="card-img-topMovie" alt="${idResultParsed.Title}">
               <div class="card-bodyMovie"> <h5 class="card-titleMovie">${idResultParsed.Title}</h5> 
               <p class="card-textMovie">${idResultParsed.Plot}</p> </div> </div>`;
-        handlingDOM.fillingCards().innerHTML = resultContent;
-
+        handlingDOM.fillingCards().innerHTML = resultContent; 
       });
-  },
-
-  /*Funcionalidad que recorre la data propia en directorsDataJSLocal.js, extrae su imdbID y lo usa como parámetro
-  para hacer la consulta en la API con el método fetch */
-  searchInWomenDirectors: () => {
-    for (let v = 0; v < womenDirectors.directors.length; v++) {
-      let idToSearchInAPI = womenDirectors.directors[v].imdbID;
-      fetch(`http://www.omdbapi.com/?i=${idToSearchInAPI}&apikey=cf8ca967`)
-        .then(response => {
-          return response.json();
-        })
-        .then(searchParsed => {
-          let resultContent = '';
-          let card = document.createElement('div');
-          card.className = "cards";
-          resultContent += `<div class="cardMovie"> <img src="${searchParsed.Poster}" class="card-img-topMovie" alt="${searchParsed.Title}">
-              <div class="card-bodyMovie"> <h5 class="card-titleMovie">${searchParsed.Title}</h5> 
-              <p class="card-textMovie">${searchParsed.Plot}</p> <a href="#" class="btnMovie btn-darkMovie">Director's Bio</a> </div> </div>`;
-          card.innerHTML = resultContent;
-          handlingDOM.fillingCards().appendChild(card);
-          return searchParsed.imdbID;
-        });
-
-      },
-
-
-      searchByUserName: () => {
-        let userSearchName = handlingDOM.catchingSearchTerm();
-
-        for(let v=0; v<womenDirectors.directors.length; v++){
-          let NameInDirector = womenDirectors.directors[v].name;
-          if( NameInDirector == userSearchName ){
-            let idToSearchInAPI = womenDirectors.directors[v].imdbID;
-            fetch(`http://www.omdbapi.com/?i=${idToSearchInAPI}&apikey=cf8ca967`)
-            .then(function (response) {
-              return response.json();
-            })
-            .then(function (userSearchParsed) {
-              console.log(userSearchParsed);
-              return userSearchParsed;
-            });
-            break;  // Finalizamos for, ya que hemos encontrado el ID de la Directora que buscabamos
-          }
-
-        }
-        
-
-      },
-
-      searchInWomenDirectors: ()=>{
-        for(let v=0; v<womenDirectors.directors.length; v++){
-          let idToSearchInAPI = womenDirectors.directors[v].imdbID;
-          fetch(`http://www.omdbapi.com/?i=${idToSearchInAPI}&apikey=cf8ca967`)
-          .then(function (response) {
+    },
+  
+    /*Funcionalidad que recorre la data propia en directorsDataJSLocal.js, extrae su imdbID y lo usa como parámetro
+    para hacer la consulta en la API con el método fetch */
+    searchInWomenDirectors: () => {
+      for (let v = 0; v < womenDirectors.directors.length; v++) {
+        let idToSearchInAPI = womenDirectors.directors[v].imdbID;
+        fetch(`http://www.omdbapi.com/?i=${idToSearchInAPI}&apikey=cf8ca967`)
+          .then(response => {
             return response.json();
           })
-          .then(function (userSearchParsed) {
-            console.log(userSearchParsed);
-            return userSearchParsed;
+          .then(searchParsed => {
+            let resultContent = '';
+            let card = document.createElement('div');
+            resultContent += `<div class="cardMovie" style="width: 13rem; margin=0.5%"> <img src="${searchParsed.Poster}" class="card-img-topMovie" alt="${searchParsed.Title}">
+                <div class="card-bodyMovie"> <h5 class="card-title">${searchParsed.Title}</h5> 
+                <p class="card-textMovie">${searchParsed.Plot}</p> <button id=${searchParsed.imdbID} class="btnMovie btn-darkMovie" onclick= fetchingData.showModalBio()>Directora: ${searchParsed.Director}</button> </div> </div>`;
+            card.innerHTML = resultContent;
+            handlingDOM.fillingCards().appendChild(card);
+            return searchParsed.imdbID;
           });
-    
-
-        } 
-
-  /*Funcionalidad que toma el nombre de directora ingresada por el usuario, la busca en la data propia,
-  extrae su imdbID y lo usa como parámetro para hacer la consulta en la API con el método fetch */
-  searchOnlyWomenData: () => {
-    let imdbFound = '';
-    let inputWmDirector = handlingDOM.onlyWomenDataSearch().toLowerCase();
-    for (let m = 0; m < womenDirectors.directors.length; m++) {
-      let nameLowerC = (womenDirectors.directors[m].name).toLowerCase();
-      if (inputWmDirector === nameLowerC) {
-        imdbFound = womenDirectors.directors[m].imdbID;
       }
-    }
-    fetch(`http://www.omdbapi.com/?i=${imdbFound}&apikey=cf8ca967`)
+    },
+  
+    /*Funcionalidad que toma el nombre de directora ingresada por el usuario, la busca en la data propia,
+    extrae su imdbID y lo usa como parámetro para hacer la consulta en la API con el método fetch */
+    searchOnlyWomenData: () => {
+      let imdbFound = '';
+      let inputWmDirector = handlingDOM.onlyWomenDataSearch().toLowerCase();
+      for (let m = 0; m < womenDirectors.directors.length; m++) {
+        let nameLowerC = (womenDirectors.directors[m].name).toLowerCase();
+        if (inputWmDirector === nameLowerC) {
+          imdbFound = womenDirectors.directors[m].imdbID;
+        }
+      }
+      fetch(`http://www.omdbapi.com/?i=${imdbFound}&apikey=cf8ca967`)
       .then(response => {
         return response.json();
       })
@@ -169,7 +128,7 @@ window.fetchingData = {
             <h5 class="modal-title" id="exampleModalLongTitle">${name}</h5>
             <button type="button" id="closeModalBtn" class="close" data-dismiss="modal" aria-label="Close" onclick=handlingDOM.closeModal()>
               <span aria-hidden="true">&times;</span>
-            </button>
+              </button>
           </div>
           <div data="modal" class="modal-body"><img src="${img}" class="img-fluid"><p>${shortBio}</p><p><a href="${officialPage}" target="_blank">${officialPage}</a></p></div>`;
           document.getElementById('modalCanvas').innerHTML=modalContent;
