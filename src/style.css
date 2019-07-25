@@ -1,14 +1,4 @@
-/* [ -- Master Stylesheet -- ]
 
-------------------------------------------------------
-:: Template Name: Original - Lifestyle Blog Template
-:: Author: Colorlib
-:: Author URL: https://colorlib.com
-:: Version: 1.0.0
-:: Created: April 3, 2018
-:: Last Updated: April 3, 2018
--------------------------------------------------- */
-/* :: Import Fonts */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
 @import url(css/bootstrap.min.css);
 @import url(css/classy-nav.css);
@@ -25,8 +15,7 @@
   src: url("fonts/helveticaneue_medium-webfont.woff2") format("woff2"), url("fonts/helveticaneue_medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-/* :: Import All CSS */
-/* :: Base CSS */
+
 * {
   margin: 0;
   padding: 0; }
@@ -1423,6 +1412,10 @@ body {
 
 }
 
+.form-controlMovie {
+font-size: 12px;
+}
+
 .cards {    
     display: flex;
     justify-content: center; 
@@ -1470,6 +1463,7 @@ body {
     border-radius: 5px;
     padding: 10px;
     justify-content: flex-start;
+    font-size: 10px;
 }
 
 .btn-dangerMovie {
@@ -1496,5 +1490,4 @@ body {
     outline: 0;
     background-color: rgba(0,0,0,0.5) !important;
 }
-
 
