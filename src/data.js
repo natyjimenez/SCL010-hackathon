@@ -4,7 +4,7 @@ window.fetchingData = {
   searchByUserInput: () => {
     let userSearch = handlingDOM.catchingSearchTerm();
     console.log(userSearch);
-    fetch(`http://www.omdbapi.com/?s=${userSearch}&apikey=cf8ca967`)
+    fetch(`https://www.omdbapi.com/?s=${userSearch}&apikey=cf8ca967`)
       .then(response => {
         return response.json();
       })
@@ -17,7 +17,7 @@ window.fetchingData = {
         let card = document.createElement('div');
         for (let c = 0; c < userSearchParsed.Search.length; c++) {
           let imdbToFetch = arrayIn[c].imdbID;
-          fetch(`http://www.omdbapi.com/?i=${imdbToFetch}&apikey=cf8ca967`)
+          fetch(`https://www.omdbapi.com/?i=${imdbToFetch}&apikey=cf8ca967`)
             .then(function (response) {
               return response.json();
             })
@@ -35,7 +35,7 @@ window.fetchingData = {
   /* Funcionalidad que busca en la API original a partir de un imdbID que ingrese el usuario */
   searchByImdbId: () => {
     let inputImdbId = handlingDOM.catchingIdToSearch();
-    fetch(`http://www.omdbapi.com/?i=${inputImdbId}&apikey=cf8ca967`)
+    fetch(`https://www.omdbapi.com/?i=${inputImdbId}&apikey=cf8ca967`)
       .then(response => {
         return response.json();
       })
@@ -54,7 +54,7 @@ window.fetchingData = {
     searchInWomenDirectors: () => {
       for (let v = 0; v < womenDirectors.directors.length; v++) {
         let idToSearchInAPI = womenDirectors.directors[v].imdbID;
-        fetch(`http://www.omdbapi.com/?i=${idToSearchInAPI}&apikey=cf8ca967`)
+        fetch(`https://www.omdbapi.com/?i=${idToSearchInAPI}&apikey=cf8ca967`)
           .then(response => {
             return response.json();
           })
@@ -82,7 +82,7 @@ window.fetchingData = {
           imdbFound = womenDirectors.directors[m].imdbID;
         }
       }
-      fetch(`http://www.omdbapi.com/?i=${imdbFound}&apikey=cf8ca967`)
+      fetch(`https://www.omdbapi.com/?i=${imdbFound}&apikey=cf8ca967`)
       .then(response => {
         return response.json();
       })

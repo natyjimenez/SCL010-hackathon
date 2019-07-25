@@ -40,4 +40,6 @@ window.handlingDOM = {
 
 };
 
+$('.carousel').carousel();
+
 window.handlingDOM = handlingDOM;

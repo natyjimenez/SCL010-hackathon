@@ -2,6 +2,30 @@ body {
     position: center;
 }
 
+.carousel .carousel-item {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel .carousel-item:first-of-type {
+  background-image: url("../src/images/wonder.jpg");
+}
+
+.carousel .carousel-item:nth-of-type(2) {
+  background-image: url("../src/images/directora.jpg");
+}
+
+.carousel .carousel-item:last-of-type {
+  background-image: url("../src/images/directora2.jpg");
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  width: 50px;
+  height: 50px;
+}
+
 .containerMovie {
 
 

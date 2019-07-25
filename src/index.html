@@ -13,9 +13,27 @@
 </head>
 
 <body>
-  <header>
-    <nav>
-    </nav>
+  <header> 
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active"></div>
+          <div id="target" class="carousel-item"></div>
+          <div class="carousel-item"></div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+      </a>
+  </div>
   </header>
     <!--Div para que se muestre el modal-->
     <div id="modalCanvas"></div>
@@ -23,27 +41,23 @@
   <!--Estos dos inputs son para el ingreso de los términos de búsqueda-->
   <div class="container-fluid">
     <!--Conjunto label, input, button para Buscar Peli por nombre de directora-->
-    <label class="form-controlMovie" for="searchOnlyWmBox">Busca la peli de tu directora favorita ingresando su
-      nombre</label>
+    <label class="form-controlMovie" for="searchOnlyWmBox">Buscar por directora</label>
     <input class="form-controlMovie" type="text" id="searchOnlyWmBox">
-    <button type="button" class="btnMovie btn-dangerMovie" id="searchOnlyWmBox" onclick="fetchingData.searchOnlyWomenData()">Busca
-      una peli de mi directora fav</button>
+    <button type="button" class="btnMovie btn-dangerMovie" id="searchOnlyWmBox" onclick="fetchingData.searchOnlyWomenData()">Buscar</button>
 
     <!--Conjunto label, input, button para Buscar Peli por su título-->
-    <label class="form-controlMovie" for="searchInputBox">Busca pelis por su título</label>
+    <label class="form-controlMovie" for="searchInputBox">Buscar por título</label>
     <input class="form-controlMovie" type="text" id="searchInputBox">
-    <button type="button" class="btnMovie btn-dangerMovie" id="btnSearchNow" onclick="fetchingData.searchByUserInput()">Busca la
-      peli por su título</button>
+    <button type="button" class="btnMovie btn-dangerMovie" id="btnSearchNow" onclick="fetchingData.searchByUserInput()">Buscar</button>
 
     <!--Conjunto label, input, button para Buscar Peli por identificador de IMDB-->
-    <label class="form-controlMovie" for="searchIdBox">Si tienes el ID de IMDB ingrésalo acá</label>
+    <label class="form-controlMovie" for="searchIdBox">Buscar por ID de IMDB</label>
     <input class="form-controlMovie" type="text" id="searchIdBox">
-    <button type="button" class="btnMovie btn-warningMovie" id="btnSearchIdNow" onclick="fetchingData.searchByImdbId()">Busca la
-      peli por su identificador IMDB</button>
+    <button type="button" class="btnMovie btn-warningMovie" id="btnSearchIdNow" onclick="fetchingData.searchByImdbId()">Buscar</button>
 
     <!--Botón para volver a mostrar todas las pelis-->
     <button type="button" class="btnMovie btn-secondaryMovie btn-lgMovie btn-blockMovie" id="btnShowAll"
-      onclick="fetchingData.cleanAndShowAll()">Mostrar todas las Fem pelis</button>
+      onclick="fetchingData.cleanAndShowAll()">Fem pelis</button>
 
     <!--Botón para limpiar los inputs-->
     <button type="button" class="btnMovie btn-secondaryMovie btn-lgMovie btn-blockMovie" id="btnShowAll"
