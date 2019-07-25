@@ -26,12 +26,16 @@ Tiempo para completar el reto: 4 días.
   ***
 
 ## **2. WomanWood - Resumen del producto**
- WomanWood es un sitio entrega información sobre películas, destacando aquellas que fueron dirigidas también por mujeres. El objetivo de nuestro producto, es que sirva de fuente de inspiración principalmente para mujeres que necesiten ver que es posible desarrollar una carrera profesional en un área dominada por el género masculino. 
+WomanWood es un sitio entrega información sobre películas, destacando aquellas que fueron dirigidas también por mujeres. El objetivo de nuestro producto, es que sirva de fuente de inspiración principalmente para mujeres que necesiten ver que es posible desarrollar una carrera profesional en un área dominada por el género masculino. 
  Queremos destacar también las películas realizadas por ellas para mostrar que sus obras no solo son partícipes del cine independiente (que no es menos importante, pero que llega a un público más reducido), si no que hay grandes y reconocidas películas vistas por millones de personas que han sido dirigidas por mujeres, sin que el mundo se haya enterado.
   ***
 
 ## **3. Planificación**
+<<<<<<< HEAD
 La planificación de nuestro proyecto la plasmamos en Trello, pueden acceder a estos datos en el siguiente [link](https://trello.com/b/5GzJGPyn/hackaton-pelis-squad-8).
+=======
+La planificación de nuestro proyecto la plasmamos en Trello, pueden acceder a estos datos en el siguiente link:
+>>>>>>> c0a6e5703d7635f61bab4409d8376cbb6f280f80
 
 La repartición de tareas fue la siguiente:
 
@@ -39,6 +43,10 @@ La repartición de tareas fue la siguiente:
 - Daniela Quintana: Desarrollo visual.
 - Carolina Medina: Desarrollo visual.
 - Natalia Jiménez: Boilerplate, Github (Master).
+<<<<<<< HEAD
+=======
+  ***
+>>>>>>> c0a6e5703d7635f61bab4409d8376cbb6f280f80
 
 ## **4. Proceso de Diseño**
 ### **4.1. Definición de usuario**
@@ -91,6 +99,10 @@ Los resultados más relevantes fueron los siguientes:
 
 ### **5.4. Prototipo de alta fidelidad**
 <a href="https://ibb.co/SmbHqkt"><img src="https://i.ibb.co/PWKJB2c/prototipoalta.jpg" alt="prototipoalta" border="0"></a>
+<<<<<<< HEAD
+=======
+***
+>>>>>>> c0a6e5703d7635f61bab4409d8376cbb6f280f80
 
 ### **5.5. Decisión de diseño**
 Como Diseño final decidimos usar como inspiración el sitio de Fox Play, que es el que le parece más amigable a las usuarios.
@@ -125,3 +137,7 @@ La interfaz final trató de adaptarse lo mayor posible al prototipo de alta fide
 ## **6. Conclusión**
 A modo de conlusion podemos decir que gracias a la investigacion realizada, se determina que efectivamente existe considerable numero de mujeres dirigiendo producciones en pantalla grande, algunas con exitos rotundos de taquilla. Todas ellas tienen algo en comun y es que todas decidieron simplemente cumplir el sueño que mas amaban. Dejamos para la siguiente iteracion las reseñas de algunas directoras de cine con frases que motivaron su carrera.
 ***
+<<<<<<< HEAD
+=======
+
+>>>>>>> c0a6e5703d7635f61bab4409d8376cbb6f280f80
