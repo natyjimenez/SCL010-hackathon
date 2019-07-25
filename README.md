@@ -1,25 +1,3 @@
-<<<<<<< HEAD
-Índice
-•	1. Resumen del proyecto
-•	2. Resumen del producto
-•	3. Planificación
-•	4. Proceso de Diseño
-o	4.1. Definición de usuario
-o	4.2. Encuesta On line
-o	4.3. Historias de usuario
-•	5. Proceso Diseño de la Interfaz de Usuario
-o	5.1. Diagrama de flujo
-o	5.2. Prototipo de baja y media fidelidad
-o	5.3. Test de usuario
-o	5.4. Prototipo de alta fidelidad
-o	5.5. Decisiones de diseño
-o	5.6. Test de usuario
-o	5.7. Interfaz final
-o	5.8. Pruebas unitarias
-o	5.9. Herramientas utilizadas
-•	6. Conclusión
-=======
->>>>>>> 57ee4644d4525b10a3465b3b8a0b63e6c8d28245
 ## **Índice**
 *  [1. Resumen del proyecto](#resumen-del-proyecto)
 *  [2. Resumen del producto](#poketmon-resumen-del-producto)
@@ -53,23 +31,6 @@ Tiempo para completar el reto: 4 días.
   ***
 
 ## **3. Planificación**
-<<<<<<< HEAD
-=======
-
->>>>>>> 57ee4644d4525b10a3465b3b8a0b63e6c8d28245
-La planificación de nuestro proyecto la plasmamos en Trello, pueden acceder a estos datos en el siguiente link:
-
-
-La repartición de tareas fue la siguiente:
-
-Nigma Silmi: Programadora.
-Daniela Quintana: Desarrollo visual.
-Carolina Medina: Desarrollo visual.
-Natalia Jiménez: Boilerplate, Github (Master).
-<<<<<<< HEAD
-  ***
-=======
-
 La planificación de nuestro proyecto la plasmamos en Trello, pueden acceder a estos datos en el siguiente [link](https://trello.com/b/5GzJGPyn/hackaton-pelis-squad-8).
 
 La repartición de tareas fue la siguiente:
@@ -78,7 +39,6 @@ La repartición de tareas fue la siguiente:
 - Daniela Quintana: Desarrollo visual.
 - Carolina Medina: Desarrollo visual.
 - Natalia Jiménez: Boilerplate, Github (Master).
->>>>>>> 57ee4644d4525b10a3465b3b8a0b63e6c8d28245
 
 ## **4. Proceso de Diseño**
 ### **4.1. Definición de usuario**
@@ -122,11 +82,7 @@ Los resultados más relevantes fueron los siguientes:
 ***
 
 ### **5.2. Diagrama de flujo**
-<<<<<<< HEAD
 <a href="https://ibb.co/9Y9K7jD"><img src="https://i.ibb.co/F7bZFtr/flujo.jpg" alt="flujo" border="0"></a>
-=======
-
->>>>>>> 57ee4644d4525b10a3465b3b8a0b63e6c8d28245
 ***
 
 ### **5.3. Prototipo de baja y média fidelidad**
@@ -134,11 +90,7 @@ Los resultados más relevantes fueron los siguientes:
 ***
 
 ### **5.4. Prototipo de alta fidelidad**
-<<<<<<< HEAD
 <a href="https://ibb.co/SmbHqkt"><img src="https://i.ibb.co/PWKJB2c/prototipoalta.jpg" alt="prototipoalta" border="0"></a>
-=======
-
->>>>>>> 57ee4644d4525b10a3465b3b8a0b63e6c8d28245
 
 ### **5.5. Decisión de diseño**
 Como Diseño final decidimos usar como inspiración el sitio de Fox Play, que es el que le parece más amigable a las usuarios.
@@ -159,11 +111,7 @@ La interfaz final trató de adaptarse lo mayor posible al prototipo de alta fide
 
 -  [Figma](https://www.figma.com/)
 
-<<<<<<< HEAD
 -  [Bootstrap](https://getbootstrap.com/)
-=======
--  [Bootstrap]
->>>>>>> 57ee4644d4525b10a3465b3b8a0b63e6c8d28245
 
 -  [Git](https://git-scm.com/)
 
@@ -175,8 +123,5 @@ La interfaz final trató de adaptarse lo mayor posible al prototipo de alta fide
 ***
 
 ## **6. Conclusión**
+A modo de conlusion podemos decir que gracias a la investigacion realizada, se determina que efectivamente existe considerable numero de mujeres dirigiendo producciones en pantalla grande, algunas con exitos rotundos de taquilla. Todas ellas tienen algo en comun y es que todas decidieron simplemente cumplir el sueño que mas amaban. Dejamos para la siguiente iteracion las reseñas de algunas directoras de cine con frases que motivaron su carrera.
 ***
-<<<<<<< HEAD
-=======
-
->>>>>>> 57ee4644d4525b10a3465b3b8a0b63e6c8d28245
