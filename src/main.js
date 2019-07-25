@@ -1,3 +1,9 @@
+//encabezado debe estar
+window.handlingDOM = {
+    catchingSearchTerm : () =>{
+        let searchTerm = document.getElementById('searchInputBox').value;
+        return searchTerm;
+    },
 
     catchingIdToSearch : () =>{
         let searchTerm = document.getElementById('searchIdBox').value;
@@ -21,6 +27,12 @@
     document.getElementById('searchInputBox').value = '';
     document.getElementById('searchIdBox').value = '';
 
+    },
+
+    closeModal : () =>{
+        document.getElementById('closeModalBtn').addEventListener('click', function(){
+            document.getElementById('directorModal').style.display = "none";
+        });
     }
         
         
@@ -29,4 +41,3 @@
 };
 
 window.handlingDOM = handlingDOM;
-
