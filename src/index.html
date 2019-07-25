@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport"
@@ -18,8 +17,15 @@
     <nav>
     </nav>
   </header>
+    <!--Div para que se muestre el modal-->
+    <div id="modalCanvas"></div>
+    <!--Fin del div para que se muestre el modal-->
   <!--Estos dos inputs son para el ingreso de los términos de búsqueda-->
+<<<<<<< HEAD
   <div class="containerMovie">
+=======
+  <div class="container-fluid">
+>>>>>>> 8217fcd1cb91091b3d5719133e9c496f0c543660
     <!--Conjunto label, input, button para Buscar Peli por nombre de directora-->
     <label class="form-controlMovie" for="searchOnlyWmBox">Busca la peli de tu directora favorita ingresando su
       nombre</label>
@@ -52,6 +58,7 @@
   <!--Este div es el espacio para que se muestren los resultados -- puede modificarse, pero conservar los id's-->
   <div class="containerMovie card-deckMovie" id="searchResultsBox"></div>
   <!--Fin del div para que se muestren los resultados-->
+
   <footer>
     <div>
       <p>&copy; Copyright 2019</p>
@@ -72,8 +79,9 @@
   <script src="data.js"></script>
   <script src="main.js"></script>
   <script>
+
     document.addEventListener('DOMContentLoaded', function () {
-      fetchingData.searchInWomenDirectors()
+      fetchingData.searchInWomenDirectors();
     });
   </script>
 </body>

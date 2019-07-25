@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     position: center;
 }
@@ -67,3 +68,18 @@ body {
 .btn-blockMovie {
     font-size: 10px;
 }
+=======
+.modalIn{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+    background-color: rgba(0,0,0,0.5) !important;
+}
+
+>>>>>>> 8217fcd1cb91091b3d5719133e9c496f0c543660
