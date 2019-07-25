@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+  
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport"
@@ -14,6 +18,62 @@
 
 <body>
   <header>
+
+    <!-- ##### Hero Area Start ##### -->
+    <div>
+        <div class="hero-area">
+            <!-- Hero Slides Area -->
+            <div class="hero-slides owl-carousel">
+                <!-- Single Slide -->
+                <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/Sofia_Coppola.jpg);">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-12">
+                                <div class="slide-content text-center">
+                                    <div class="post-tag">
+                                        <a href="#" data-animation="fadeInUp">Sofia Coppola</a>
+                                    </div>
+                                    <h2 data-animation="fadeInUp" data-delay="250ms"><a href="single-post.html">Me he inspirado en mis recuerdos y experiencias</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Slide -->
+                <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/b1.jpg);">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-12">
+                                <div class="slide-content text-center">
+                                    <div class="post-tag">
+                                        <a href="#" data-animation="fadeInUp">Topiton 2</a>
+                                    </div>
+                                    <h2 data-animation="fadeInUp" data-delay="250ms"><a href="single-post.html">Take a look at last night’s party!</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Slide -->
+                <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/b3.jpg);">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-12">
+                                <div class="slide-content text-center">
+                                    <div class="post-tag">
+                                        <a href="#" data-animation="fadeInUp">Topiton 3</a>
+                                    </div>
+                                    <h2 data-animation="fadeInUp" data-delay="250ms"><a href="single-post.html">Take a look at last night’s party!</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Hero Area End ##### -->
+
     <nav>
     </nav>
   </header>
@@ -21,7 +81,19 @@
     <div id="modalCanvas"></div>
     <!--Fin del div para que se muestre el modal-->
   <!--Estos dos inputs son para el ingreso de los términos de búsqueda-->
+
+  <label class="form-control" for="searchInputBox">Ingresa el Nombre de la Directora</label>
+  <input class="form-control" type="text" id="searchInputBox">
+  <button type="button" class="btn btn-danger" id="btnSearchNow" onclick="fetchingData.searchByUserName()">Buscar</button>
+  <label class="form-control" for="searchInputBox">Si tienes el ID de IMDB ingrésalo acá</label>
+  <input class="form-control" type="text" id="searchIdBox">
+  <button type="button" class="btn btn-warning" id="btnSearchIdNow"
+    onclick="fetchingData.searchByImdbId()">Buscar</button>
+
+  <div class="container">
+
   <div class="container-fluid">
+
     <!--Conjunto label, input, button para Buscar Peli por nombre de directora-->
     <label class="form-controlMovie" for="searchOnlyWmBox">Busca la peli de tu directora favorita ingresando su
       nombre</label>
@@ -51,8 +123,12 @@
   </div>
   <!--Fin de los inputs de los términos de búsqueda-->
 
+  <!--Este div es el espacio para que se muestren los resultados puede modificarse, pero conservar los id's-->
+  <div class="container card-deck" id="searchResultsBox"></div>
+
   <!--Este div es el espacio para que se muestren los resultados -- puede modificarse, pero conservar los id's-->
   <div class="containerMovie card-deckMovie" id="searchResultsBox"></div>
+
   <!--Fin del div para que se muestren los resultados-->
 
   <footer>
@@ -60,7 +136,6 @@
       <p>&copy; Copyright 2019</p>
     </div>
   </footer>
-
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -80,6 +155,17 @@
       fetchingData.searchInWomenDirectors();
     });
   </script>
+  
+    <!-- jQuery (Necessary for All JavaScript Plugins) -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <!--<script src="js/popper.min.js"></script> -->
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
 </body>
 
 
