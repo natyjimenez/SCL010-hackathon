@@ -29,6 +29,12 @@ window.handlingDOM = {
     document.getElementById('searchInputBox').value = '';
     document.getElementById('searchIdBox').value = '';
 
+    },
+
+    closeModal : () =>{
+        document.getElementById('closeModalBtn').addEventListener('click', function(){
+            document.getElementById('directorModal').style.display = "none";
+        });
     }
         
         
