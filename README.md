@@ -31,11 +31,7 @@ WomanWood es un sitio entrega información sobre películas, destacando aquellas
   ***
 
 ## **3. Planificación**
-<<<<<<< HEAD
 La planificación de nuestro proyecto la plasmamos en Trello, pueden acceder a estos datos en el siguiente [link](https://trello.com/b/5GzJGPyn/hackaton-pelis-squad-8).
-=======
-La planificación de nuestro proyecto la plasmamos en Trello, pueden acceder a estos datos en el siguiente link:
->>>>>>> c0a6e5703d7635f61bab4409d8376cbb6f280f80
 
 La repartición de tareas fue la siguiente:
 
@@ -43,10 +39,7 @@ La repartición de tareas fue la siguiente:
 - Daniela Quintana: Desarrollo visual.
 - Carolina Medina: Desarrollo visual.
 - Natalia Jiménez: Boilerplate, Github (Master).
-<<<<<<< HEAD
-=======
   ***
->>>>>>> c0a6e5703d7635f61bab4409d8376cbb6f280f80
 
 ## **4. Proceso de Diseño**
 ### **4.1. Definición de usuario**
@@ -60,7 +53,6 @@ La información obtenida más relevante fue la siguiente:
 
 -	Al 80% de nuestras encuestadas le gustaría que la página incluya una reseña sobre la Directora de la película y un breve relato de qué la motivo a ser parte de esta industria, y como logró realizarlo.
 -	Al 50% de las encuestadas le interesa que el sitio aborde solo películas dirigidas por mujeres.
-
 
 Recibimos como feedback la propuesta de hacer una página de búsqueda abierta a todo tipo de películas al margen del género del director, pero destacando las obras dirigidas por una mujer, y decidimos implementar esta propuesta.
  ***
@@ -99,10 +91,7 @@ Los resultados más relevantes fueron los siguientes:
 
 ### **5.4. Prototipo de alta fidelidad**
 <a href="https://ibb.co/SmbHqkt"><img src="https://i.ibb.co/PWKJB2c/prototipoalta.jpg" alt="prototipoalta" border="0"></a>
-<<<<<<< HEAD
-=======
 ***
->>>>>>> c0a6e5703d7635f61bab4409d8376cbb6f280f80
 
 ### **5.5. Decisión de diseño**
 Como Diseño final decidimos usar como inspiración el sitio de Fox Play, que es el que le parece más amigable a las usuarios.
@@ -137,7 +126,4 @@ La interfaz final trató de adaptarse lo mayor posible al prototipo de alta fide
 ## **6. Conclusión**
 A modo de conlusion podemos decir que gracias a la investigacion realizada, se determina que efectivamente existe considerable numero de mujeres dirigiendo producciones en pantalla grande, algunas con exitos rotundos de taquilla. Todas ellas tienen algo en comun y es que todas decidieron simplemente cumplir el sueño que mas amaban. Dejamos para la siguiente iteracion las reseñas de algunas directoras de cine con frases que motivaron su carrera.
 ***
-<<<<<<< HEAD
-=======
 
->>>>>>> c0a6e5703d7635f61bab4409d8376cbb6f280f80
