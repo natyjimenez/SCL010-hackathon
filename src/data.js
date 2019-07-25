@@ -47,9 +47,10 @@ window.fetchingData = {
         .then ((searchParsed) => {
           let resultContent = '';
           let card = document.createElement('div');
-          resultContent += `<div class="card" style="width: 18rem;"> <img src="${searchParsed.Poster}" class="card-img-top" alt="${searchParsed.Title}">
-              <div class="card-body"> <h5 class="card-title">${searchParsed.Title}</h5> 
-              <p class="card-text">${searchParsed.Plot}</p> <a href="#" class="btn btn-dark">Director's Bio</a> </div> </div>`;
+          card.className = "cards";
+          resultContent += `<div class="cardMovie"> <img src="${searchParsed.Poster}" class="card-img-topMovie" alt="${searchParsed.Title}">
+              <div class="card-bodyMovie"> <h5 class="card-titleMovie">${searchParsed.Title}</h5> 
+              <p class="card-textMovie">${searchParsed.Plot}</p> <a href="#" class="btnMovie btn-darkMovie">Director's Bio</a> </div> </div>`;
           card.innerHTML = resultContent;
           handlingDOM.fillingCards().appendChild(card);
         });
